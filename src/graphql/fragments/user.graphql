@@ -1,0 +1,37 @@
+fragment user on User {
+  id
+  firstName
+  lastName
+  username
+  email
+  avatar
+  admin
+  seller
+  verified
+  createdAt
+}
+
+fragment cart on CartItem {
+  title
+  description
+  price
+  images
+  quantity
+}
+
+fragment error on ErrorField {
+  field
+  msg
+}
+
+fragment UserResponse on UserType {
+  user {
+    ...user
+  }
+  cart {
+    ...cart
+  }
+  errors {
+    ...error
+  }
+}

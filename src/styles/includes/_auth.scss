@@ -1,0 +1,29 @@
+@import './mixin';
+
+.form {
+  max-width: 60rem;
+  margin: 4rem auto auto;
+  padding: 3rem;
+  box-shadow: $shadow;
+
+  &-header {
+    margin-bottom: 2rem;
+  }
+
+  &-group {
+    margin-bottom: 1rem;
+  }
+
+  &-label {
+    font-size: 1.4rem;
+  }
+
+  &-control {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border: 1px solid rgba($text-color, 0.3);
+    border-radius: 4px;
+    color: $text-color;
+  }
+}

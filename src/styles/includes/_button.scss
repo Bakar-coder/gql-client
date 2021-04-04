@@ -1,0 +1,20 @@
+@import './mixin';
+
+.btn {
+  cursor: pointer;
+  padding: 0.8rem 2.4rem;
+  border: none;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
+
+  &-primary {
+    background-image: linear-gradient(to top right, $blue, $blue-dark);
+    color: $white;
+    padding: 1.4rem 3.2rem;
+
+    &:hover {
+      transform: scale(1.05);
+      background-image: linear-gradient(to top right, $blue-dark, $blue-dark);
+    }
+  }
+}

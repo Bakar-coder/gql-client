@@ -1,0 +1,58 @@
+@import './mixin';
+@import './button';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+
+  & h1,
+  & h2,
+  & h3 {
+    color: $text-heading;
+  }
+
+  & ul {
+    list-style-type: none;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.error {
+  color: $red !important;
+
+  &-input {
+    border: 1px solid $red !important;
+    color: $red !important;
+  }
+}

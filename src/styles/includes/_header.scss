@@ -1,0 +1,26 @@
+@import './mixin';
+
+.header {
+  &-nav {
+    &__content {
+      height: 7.2rem;
+      box-shadow: $shadow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em;
+
+      & .list {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        &-item {
+          &:not(:last-child) {
+            margin-right: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
